@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>notes to self</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="shortcut icon" type="image/png" href="/style/favicon.png">
+
+
+</head>
+
+<body>
+    <div class="flexcontainer">
+        <div class="columncontainer1">
+            <form class='form' method="POST" action="/results">
+                <ul>
+                    <h1 class="intro">hi there, </h1>
+
+                    <li><input class="titleform" type="text" placeholder="what's your name?" name="newTitle" required
+                            autocomplete="off" word-break='all' maxlength="15"></li>
+                    <li><textarea class="titleform" type="text" placeholder="what's on your mind?" name="newBody"
+                            required autocomplete="off" word-break='all' maxlength="20"></textarea>
+                    </li>
+                    <li><input class="submit" type="submit" value="note to self"></li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="columncontainer2">
+            <% allMessages.reverse().forEach(body => {%>
+            <div class='results'>
+                <%=body.title%>
+            </div>
+            <div class='results'>
+                <%=body.body%>
+            </div>
+            <%})%>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

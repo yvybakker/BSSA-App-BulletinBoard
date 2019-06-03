@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Circular-Medium';
+  src: url('Circular-Medium.svg#Circular-Medium') format('svg'),
+       url('Circular-Medium.ttf') format('truetype'),
+       url('Circular-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'circular';
+  src: url('circular.eot');
+  src: url('circular.eot?#iefix') format('embedded-opentype'),
+       url('circular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
